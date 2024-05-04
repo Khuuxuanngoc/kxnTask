@@ -55,6 +55,8 @@ public:
 
   virtual void loop() {}
 
+  virtual void runFast(){}
+
   void run(unsigned long pa_ulCurrentTime);
 };
 
@@ -101,7 +103,7 @@ public:
     head = newNode;
   }
 
-  void kxnTaskManagerClass::remove(kxnTask *task)
+  void remove(kxnTask *task)
   {
     NodeKxnTask *current = head;
     NodeKxnTask *prev = NULL;

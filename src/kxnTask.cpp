@@ -34,6 +34,7 @@ void kxnTask::kDelay(unsigned long paTime){
   }
 
   void kxnTask::run(unsigned long pa_ulCurrentTime) {
+    runFast();
     unsigned long currentTime = pa_ulCurrentTime;
 
     if (currentTime - previousTime >= interval) {
